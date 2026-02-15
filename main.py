@@ -144,3 +144,4 @@ async def main_endpoint(data: dict):
 @app.get("/analytics")
 async def analytics_endpoint():
     return analytics.metrics(cache.size())
+handler = app
